@@ -30,4 +30,4 @@ Student Role account & password: 11111111 & 123456
 
 Teacher Role account & password: 22222222 & 123456
 
-Teacher Role account & password: 33333333 & a123456
+Admin Role account & password: 33333333 & a123456
