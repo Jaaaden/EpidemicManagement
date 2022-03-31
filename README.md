@@ -12,14 +12,14 @@ $ npm install
 
 Enter schoolVirus-back/config/config.json and modify database account password in the development configuration.
 
-Enter schoolVirus-back:
+Enter schoolVirus-back folder:
 
 ```
 $ node app.js
 ```
 
-Enter schoolVirus-front:
+Enter schoolVirus-front folder:
 
 ```
-$ $npm run dev
+$ npm run dev
 ```
