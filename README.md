@@ -10,6 +10,18 @@ $ npm install
 
 ## Usage
 
+### Run the front directly
+
+Enter schoolVirus-front:
+
+```
+$ $npm run dev
+```
+
+### Run front and back together
+
+Create a database and import the sql file.
+
 Enter schoolVirus-back/config/config.json and modify database account password in the development configuration.
 
 Enter schoolVirus-back folder:
