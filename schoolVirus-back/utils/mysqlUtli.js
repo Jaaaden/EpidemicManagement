@@ -5,8 +5,7 @@ var pool = mysql.createPool({
     host     : 'localhost',
     user     : 'root',
     password : 'root',
-    port     : '3306',
-    database : 'xunke725'
+    port     : '3306'
 });
 
 //CRUD
