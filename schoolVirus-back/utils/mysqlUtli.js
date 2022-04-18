@@ -38,12 +38,9 @@ let exec =  function (sql,params) {
         })
 }
 
-//Format all parameters as arrays The parameters are variable parameters (variable parameters are not written when the function is declared)
- 
 let formatParams = function () {
     var array = [];
 
-    //There is a variable arguments in js that can access all incoming values
     for(var i = 0, l = arguments.length; i < l; i++){
         array.push(arguments[i]);
     }
