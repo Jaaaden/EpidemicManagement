@@ -1,19 +1,3 @@
-/*
- Navicat Premium Data Transfer
-
- Source Server         : mysql57
- Source Server Type    : MySQL
- Source Server Version : 50710
- Source Host           : localhost:3306
- Source Schema         : Jing
-
- Target Server Type    : MySQL
- Target Server Version : 50710
- File Encoding         : 65001
-
- Date: 31/03/2022 01:39:49
-*/
-
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
@@ -56,11 +40,11 @@ CREATE TABLE `campus_notices` (
 -- Records of campus_notices
 -- ----------------------------
 BEGIN;
-INSERT INTO `campus_notices` (`id`, `n_title`, `n_content`, `n_date`, `pid`) VALUES (1, 'Campus Epidemic News Title 1', 'Campus Epidemic News 1', '2021-12-11 00:00:00', 3);
-INSERT INTO `campus_notices` (`id`, `n_title`, `n_content`, `n_date`, `pid`) VALUES (2, 'Campus Epidemic News Title 2', 'Campus Epidemic News 2', '2021-12-11 00:00:00', 3);
-INSERT INTO `campus_notices` (`id`, `n_title`, `n_content`, `n_date`, `pid`) VALUES (3, 'Campus Epidemic News Title 3', 'Campus Epidemic News 3', '2021-12-11 00:00:00', 3);
-INSERT INTO `campus_notices` (`id`, `n_title`, `n_content`, `n_date`, `pid`) VALUES (4, 'Campus Epidemic News Title 4', 'Campus Epidemic News 4', '2021-12-20 00:00:00', 3);
-INSERT INTO `campus_notices` (`id`, `n_title`, `n_content`, `n_date`, `pid`) VALUES (5, 'Campus Epidemic News Title 5', 'Campus Epidemic News 5', '2021-12-20 16:00:00', 3);
+INSERT INTO `campus_notices` (`id`, `n_title`, `n_content`, `n_date`, `pid`) VALUES (1, 'Campus Epidemic News Title 1', 'Campus Epidemic News 1', '2022-03-11 00:00:00', 3);
+INSERT INTO `campus_notices` (`id`, `n_title`, `n_content`, `n_date`, `pid`) VALUES (2, 'Campus Epidemic News Title 2', 'Campus Epidemic News 2', '2022-03-12 00:00:00', 3);
+INSERT INTO `campus_notices` (`id`, `n_title`, `n_content`, `n_date`, `pid`) VALUES (3, 'Campus Epidemic News Title 3', 'Campus Epidemic News 3', '2022-03-13 00:00:00', 3);
+INSERT INTO `campus_notices` (`id`, `n_title`, `n_content`, `n_date`, `pid`) VALUES (4, 'Campus Epidemic News Title 4', 'Campus Epidemic News 4', '2022-03-20 00:00:00', 3);
+INSERT INTO `campus_notices` (`id`, `n_title`, `n_content`, `n_date`, `pid`) VALUES (5, 'Campus Epidemic News Title 5', 'Campus Epidemic News 5', '2022-03-21 16:00:00', 3);
 COMMIT;
 
 -- ----------------------------
@@ -108,12 +92,12 @@ CREATE TABLE `domestic_notices` (
 -- Records of domestic_notices
 -- ----------------------------
 BEGIN;
-INSERT INTO `domestic_notices` (`id`, `n_title`, `n_date`, `pid`) VALUES (1, 'Domestic epidemic news headlines 1', '2021-12-11 00:00:00', 3);
-INSERT INTO `domestic_notices` (`id`, `n_title`, `n_date`, `pid`) VALUES (2, 'Domestic epidemic news headlines 2', '2021-12-11 00:00:00', 3);
-INSERT INTO `domestic_notices` (`id`, `n_title`, `n_date`, `pid`) VALUES (3, 'Domestic epidemic news headlines 4', '2021-12-11 00:00:00', 3);
-INSERT INTO `domestic_notices` (`id`, `n_title`, `n_date`, `pid`) VALUES (4, 'Domestic epidemic news headlines 5', '2021-12-20 01:35:45', 3);
-INSERT INTO `domestic_notices` (`id`, `n_title`, `n_date`, `pid`) VALUES (5, 'Domestic epidemic news headlines 6', '2021-12-20 01:36:14', 3);
-INSERT INTO `domestic_notices` (`id`, `n_title`, `n_date`, `pid`) VALUES (6, 'Domestic epidemic news headlines 7', '2021-12-20 01:36:28', 3);
+INSERT INTO `domestic_notices` (`id`, `n_title`, `n_date`, `pid`) VALUES (1, 'Domestic epidemic news headlines 1', '2022-03-11 00:00:00', 3);
+INSERT INTO `domestic_notices` (`id`, `n_title`, `n_date`, `pid`) VALUES (2, 'Domestic epidemic news headlines 2', '2022-03-12 00:00:00', 3);
+INSERT INTO `domestic_notices` (`id`, `n_title`, `n_date`, `pid`) VALUES (3, 'Domestic epidemic news headlines 4', '2022-03-13 00:00:00', 3);
+INSERT INTO `domestic_notices` (`id`, `n_title`, `n_date`, `pid`) VALUES (4, 'Domestic epidemic news headlines 5', '2022-03-21 01:35:45', 3);
+INSERT INTO `domestic_notices` (`id`, `n_title`, `n_date`, `pid`) VALUES (5, 'Domestic epidemic news headlines 6', '2022-03-22 01:36:14', 3);
+INSERT INTO `domestic_notices` (`id`, `n_title`, `n_date`, `pid`) VALUES (6, 'Domestic epidemic news headlines 7', '2022-03-23 01:36:28', 3);
 COMMIT;
 
 -- ----------------------------
@@ -140,7 +124,7 @@ CREATE TABLE `health_infoers` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `health_infoers` (`id`, `i_name`, `i_idcard`, `i_phone`, `i_gender`, `i_birth`, `i_nationality`, `i_domicile`, `i_native`, `i_address`, `pid`) VALUES (1, 'Jing', '440666666666666666', '16666666666', 0, '2022-03-23 00:00:00', 'China', 'Beijing', 'Beijing', 'asdf', 1);
-INSERT INTO `health_infoers` (`id`, `i_name`, `i_idcard`, `i_phone`, `i_gender`, `i_birth`, `i_nationality`, `i_domicile`, `i_native`, `i_address`, `pid`) VALUES (2, 'Yyyyy', '440999999999999999', '19999999999', 0, '2022-03-24 00:00:00', 'HongKong\n⼤陆', 'HongKong', 'HongKong', 'qwer', 2);
+INSERT INTO `health_infoers` (`id`, `i_name`, `i_idcard`, `i_phone`, `i_gender`, `i_birth`, `i_nationality`, `i_domicile`, `i_native`, `i_address`, `pid`) VALUES (2, 'Yyyyy', '440999999999999999', '19999999999', 0, '2022-03-24 00:00:00', 'HongKong', 'HongKong', 'HongKong', 'qwer', 2);
 INSERT INTO `health_infoers` (`id`, `i_name`, `i_idcard`, `i_phone`, `i_gender`, `i_birth`, `i_nationality`, `i_domicile`, `i_native`, `i_address`, `pid`) VALUES (3, 'Yuuuu', '440888888888888888', '18888888888', 0, '2022-03-24 00:00:00', 'South Korea', 'Seoul', 'Seoul', 'abcd', 3);
 COMMIT;
 
@@ -194,9 +178,9 @@ CREATE TABLE `health_records` (
 -- Records of health_records
 -- ----------------------------
 BEGIN;
-INSERT INTO `health_records` (`id`, `r_stuid`, `r_name`, `r_vaccine`, `r_inject`, `r_num`, `r_manufacturer`, `r_vac_unit`, `r_vac_date`, `pid`) VALUES (1, 'CB16666666666', 'dahuan', 'Novel Coronavirus inactivated vaccine', 3, 20211211, 'Beijing', 'Celmenti vaccination clinic', '2022-03-02 16:00:00', 3);
-INSERT INTO `health_records` (`id`, `r_stuid`, `r_name`, `r_vaccine`, `r_inject`, `r_num`, `r_manufacturer`, `r_vac_unit`, `r_vac_date`, `pid`) VALUES (2, 'CB19999999999', 'xiaohuan', 'Novel Coronavirus inactivated vaccine', 3, 20211211, 'Guangzhou', 'Celmenti vaccination clinic', '2022-03-22 00:00:00', 2);
-INSERT INTO `health_records` (`id`, `r_stuid`, `r_name`, `r_vaccine`, `r_inject`, `r_num`, `r_manufacturer`, `r_vac_unit`, `r_vac_date`, `pid`) VALUES (3, 'CB18888888888', 'ahuan', 'Novel Coronavirus inactivated vaccine', 3, 20211211, 'HongKong', 'Celmenti vaccination clinic', '2022-03-25 00:00:00', 3);
+INSERT INTO `health_records` (`id`, `r_stuid`, `r_name`, `r_vaccine`, `r_inject`, `r_num`, `r_manufacturer`, `r_vac_unit`, `r_vac_date`, `pid`) VALUES (1, 'CB16666666666', 'wulala', 'Novel Coronavirus inactivated vaccine', 3, 20211211, 'Beijing', 'Celmenti vaccination clinic', '2022-03-02 16:00:00', 3);
+INSERT INTO `health_records` (`id`, `r_stuid`, `r_name`, `r_vaccine`, `r_inject`, `r_num`, `r_manufacturer`, `r_vac_unit`, `r_vac_date`, `pid`) VALUES (2, 'CB19999999999', 'hahahaha', 'Novel Coronavirus inactivated vaccine', 3, 20211211, 'Guangzhou', 'Celmenti vaccination clinic', '2022-03-22 00:00:00', 2);
+INSERT INTO `health_records` (`id`, `r_stuid`, `r_name`, `r_vaccine`, `r_inject`, `r_num`, `r_manufacturer`, `r_vac_unit`, `r_vac_date`, `pid`) VALUES (3, 'CB18888888888', 'hualala', 'Novel Coronavirus inactivated vaccine', 3, 20211211, 'HongKong', 'Celmenti vaccination clinic', '2022-03-25 00:00:00', 3);
 COMMIT;
 
 -- ----------------------------
@@ -223,9 +207,9 @@ CREATE TABLE `highrick_manages` (
 -- Records of highrick_manages
 -- ----------------------------
 BEGIN;
-INSERT INTO `highrick_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_building_num`, `m_recent_place`, `m_recent_history`, `m_health_status`, `aid`) VALUES (1, 'CB16666666666', 'dahuan', 0, 'school of computing', 'GT', 'A2', 1212, 'Celmenti', 'Dining Room', 'Good', 1);
-INSERT INTO `highrick_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_building_num`, `m_recent_place`, `m_recent_history`, `m_health_status`, `aid`) VALUES (2, 'CB19999999999', 'xiaohuan', 0, 'school of computing', 'GT', 'A2', 1212, 'Celmenti', 'Dining Room', 'Good', 2);
-INSERT INTO `highrick_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_building_num`, `m_recent_place`, `m_recent_history`, `m_health_status`, `aid`) VALUES (3, 'CB18888888888', 'ahuan', 0, 'school of computing', 'GT', 'A2', 1212, 'Celmenti', 'Dining Room', 'Good', 3);
+INSERT INTO `highrick_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_building_num`, `m_recent_place`, `m_recent_history`, `m_health_status`, `aid`) VALUES (1, 'CB16666666666', 'wulala', 0, 'school of computing', 'GT', 'A2', 1212, 'Celmenti', 'Dining Room', 'Good', 1);
+INSERT INTO `highrick_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_building_num`, `m_recent_place`, `m_recent_history`, `m_health_status`, `aid`) VALUES (2, 'CB19999999999', 'hahahaha', 0, 'school of computing', 'GT', 'A2', 1212, 'Celmenti', 'Dining Room', 'Good', 2);
+INSERT INTO `highrick_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_building_num`, `m_recent_place`, `m_recent_history`, `m_health_status`, `aid`) VALUES (3, 'CB18888888888', 'hualala', 0, 'school of computing', 'GT', 'A2', 1212, 'Celmenti', 'Dining Room', 'Good', 3);
 COMMIT;
 
 -- ----------------------------
@@ -251,9 +235,9 @@ CREATE TABLE `infection_manages` (
 -- Records of infection_manages
 -- ----------------------------
 BEGIN;
-INSERT INTO `infection_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_build_num`, `m_inject_source`, `m_inject_date`, `aid`) VALUES (1, 'CB16666666666', 'dahuan', 0, 'School of Computing', 'GT', 'com1', 1212, 'Dining \nRoom', '2022-03-11 00:00:00', 1);
-INSERT INTO `infection_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_build_num`, `m_inject_source`, `m_inject_date`, `aid`) VALUES (2, 'CB19999999999', 'xiaohuan', 0, 'School of Computing', 'CS', 'com2', 1212, 'Dining \nRoom', '2022-03-11 00:00:00', 2);
-INSERT INTO `infection_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_build_num`, `m_inject_source`, `m_inject_date`, `aid`) VALUES (3, 'CB18888888888', 'ahuan', 0, 'School of Computing', 'IS', 'com1', 1212, 'Dining \nRoom', '2022-03-11 00:00:00', 3);
+INSERT INTO `infection_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_build_num`, `m_inject_source`, `m_inject_date`, `aid`) VALUES (1, 'CB16666666666', 'wulala', 0, 'School of Computing', 'GT', 'com1', 1212, 'Dining \nRoom', '2022-03-11 00:00:00', 1);
+INSERT INTO `infection_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_build_num`, `m_inject_source`, `m_inject_date`, `aid`) VALUES (2, 'CB19999999999', 'hahahaha', 0, 'School of Computing', 'CS', 'com2', 1212, 'Dining \nRoom', '2022-03-11 00:00:00', 2);
+INSERT INTO `infection_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_build_num`, `m_inject_source`, `m_inject_date`, `aid`) VALUES (3, 'CB18888888888', 'hualala', 0, 'School of Computing', 'IS', 'com1', 1212, 'Dining \nRoom', '2022-03-11 00:00:00', 3);
 COMMIT;
 
 -- ----------------------------
@@ -336,9 +320,9 @@ CREATE TABLE `lowrick_manages` (
 -- Records of lowrick_manages
 -- ----------------------------
 BEGIN;
-INSERT INTO `lowrick_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_building_num`, `m_recent_place`, `m_recent_history`, `m_health_status`, `aid`) VALUES (1, 'CB16666666666', 'dahuan', 0, 'School of Computing', 'GT', 'A2', 1212, 'Clementi', 'Dining Room', 'Good', 3);
-INSERT INTO `lowrick_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_building_num`, `m_recent_place`, `m_recent_history`, `m_health_status`, `aid`) VALUES (2, 'CB19999999999', 'xiaohuan', 0, 'SoC', 'GT', 'A2', 1212, 'Clementi', 'Dining Room', 'Good', 3);
-INSERT INTO `lowrick_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_building_num`, `m_recent_place`, `m_recent_history`, `m_health_status`, `aid`) VALUES (3, 'CB18888888888', 'ahuan', 0, 'SoC', 'GT', 'A2', 1212, 'Clementi', 'Dining Room', 'Good', 3);
+INSERT INTO `lowrick_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_building_num`, `m_recent_place`, `m_recent_history`, `m_health_status`, `aid`) VALUES (1, 'CB16666666666', 'wulala', 0, 'School of Computing', 'GT', 'A2', 1212, 'Clementi', 'Dining Room', 'Good', 3);
+INSERT INTO `lowrick_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_building_num`, `m_recent_place`, `m_recent_history`, `m_health_status`, `aid`) VALUES (2, 'CB19999999999', 'hahahaha', 0, 'SoC', 'GT', 'A2', 1212, 'Clementi', 'Dining Room', 'Good', 3);
+INSERT INTO `lowrick_manages` (`id`, `m_stuid`, `m_name`, `m_gender`, `m_college`, `m_class`, `m_building`, `m_building_num`, `m_recent_place`, `m_recent_history`, `m_health_status`, `aid`) VALUES (3, 'CB18888888888', 'hualala', 0, 'SoC', 'GT', 'A2', 1212, 'Clementi', 'Dining Room', 'Good', 3);
 COMMIT;
 
 -- ----------------------------
@@ -403,29 +387,4 @@ CREATE TABLE `sequelizemeta` (
   UNIQUE KEY `name` (`name`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=COMPACT;
 
--- ----------------------------
--- Records of sequelizemeta
--- ----------------------------
-BEGIN;
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211210132155-create-roles.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211210161324-create-personal-infos.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211211023511-create-lowrick-manages.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211211031503-create-highrick-manages.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211211032901-create-close-manages.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211211034301-create-infection-manages.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211211041019-create-journey-datas.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211211043828-create-journey-datas.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211211050830-create-health-records.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211211053204-create-health-records.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211211070408-create-health-messages.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211211072537-create-health-infoers.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211211075507-create-domestic-notices.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211211081134-create-campus-notices.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211211082527-create-authors.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211211083405-create-authors.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211211084143-create-authors.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211211085552-create-journals.js');
-INSERT INTO `sequelizemeta` (`name`) VALUES ('20211228042318-create-journals.js');
-COMMIT;
 
-SET FOREIGN_KEY_CHECKS = 1;
