@@ -38,7 +38,7 @@
                                         v-model="basicForm.i_gender"
                                         :label="1"
                                         border
-                                        >女</el-radio
+                                        >Female</el-radio
                                     >
                                 </el-form-item>
                                 <el-form-item label="date of birth" prop="i_birth">
@@ -239,7 +239,7 @@ export default {
                 i_stuid: this.$store.state.user.rolesData.r_serial,
                 i_name: this.$store.state.user.rolesData.r_name,
                 i_gender: 0,
-                i_birth: "2021/12/21",
+                i_birth: "2022/03/09",
                 i_nation: "Please enter content",
                 i_university: "Please enter content",
                 i_college: "Please enter content",
@@ -248,7 +248,7 @@ export default {
             educateForm: {
                 i_university: "Please enter content",
                 i_profession: "Please enter content",
-                i_enter_time: "2021/12/21",
+                i_enter_time: "2022/03/09",
                 i_background: "Please enter content",
             },
             basicRules: {
