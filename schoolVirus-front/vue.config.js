@@ -6,10 +6,8 @@ function resolve(dir) {
     return path.join(__dirname, dir);
 }
 
-const name = defaultSettings.title || "vue Admin Template"; // page title
+const name = defaultSettings.title || "vue Admin Template"; 
 
-
-// port = 9528 npm run dev OR npm run dev --port = 9528
 const port = process.env.port || process.env.npm_config_port || 9528; // dev port
 
 // https://cli.vuejs.org/config/
@@ -18,7 +16,7 @@ module.exports = {
     publicPath: "/",
     outputDir: "dist",
     assetsDir: "static",
-    lintOnSave: false, // close eslint check
+    lintOnSave: false, 
     // lintOnSave: process.env.NODE_ENV === "development",
     productionSourceMap: false,
     devServer: {
@@ -31,8 +29,6 @@ module.exports = {
         before: require("./mock/mock-server.js"),
     },
     configureWebpack: {
-        // provide the app's title in webpack's name field, so that
-        // it can be accessed in index.html to inject the correct title.
         name: name,
         resolve: {
             alias: {
@@ -45,7 +41,6 @@ module.exports = {
         config.plugin("preload").tap(() => [
             {
                 rel: "preload",
-                // to ignore runtime.js
                 // https://github.com/vuejs/vue-cli/blob/dev/packages/@vue/cli-service/lib/config/app.js#L171
                 fileBlacklist: [
                     /\.map$/,
@@ -55,11 +50,9 @@ module.exports = {
                 include: "initial",
             },
         ]);
-
-        // when there are many pages, it will cause too many meaningless requests
+        
         config.plugins.delete("prefetch");
 
-        // set svg-sprite-loader
         config.module.rule("svg").exclude.add(resolve("src/icons")).end();
         config.module
             .rule("icons")
@@ -79,7 +72,6 @@ module.exports = {
                 .after("html")
                 .use("script-ext-html-webpack-plugin", [
                     {
-                        // `runtime` must same as runtimeChunk name. default is `runtime`
                         inline: /runtime\..*\.js$/,
                     },
                 ])
@@ -91,17 +83,17 @@ module.exports = {
                         name: "chunk-libs",
                         test: /[\\/]node_modules[\\/]/,
                         priority: 10,
-                        chunks: "initial", // only package third parties that are initially dependent
+                        chunks: "initial", 
                     },
                     elementUI: {
-                        name: "chunk-elementUI", // split elementUI into a single package
-                        priority: 20, // the weight needs to be larger than libs and app or it will be packaged into libs or app
-                        test: /[\\/]node_modules[\\/]_?element-ui(.*)/, // in order to adapt to cnpm
+                        name: "chunk-elementUI", 
+                        priority: 20, 
+                        test: /[\\/]node_modules[\\/]_?element-ui(.*)/, 
                     },
                     commons: {
                         name: "chunk-commons",
-                        test: resolve("src/components"), // can customize your rules
-                        minChunks: 3, //  minimum common number
+                        test: resolve("src/components"), 
+                        minChunks: 3, 
                         priority: 5,
                         reuseExistingChunk: true,
                     },
