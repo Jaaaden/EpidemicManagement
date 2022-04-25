@@ -332,10 +332,10 @@
                     </el-form-item>
                     <el-form-item label="Gender" prop="i_gender">
                         <el-radio v-model="applyForm.i_gender" :label="0" border
-                            >男</el-radio
+                            >Male</el-radio
                         >
                         <el-radio v-model="applyForm.i_gender" :label="1" border
-                            >女</el-radio
+                            >Female</el-radio
                         >
                     </el-form-item>
                     <el-form-item label="Date of Birth" prop="i_birth">
@@ -488,10 +488,10 @@
                     </el-form-item>
                     <el-form-item label="Gender" prop="i_gender">
                         <el-radio v-model="applyForm.i_gender" :label="0" border
-                            >男</el-radio
+                            >Male</el-radio
                         >
                         <el-radio v-model="applyForm.i_gender" :label="1" border
-                            >女</el-radio
+                            >Female</el-radio
                         >
                     </el-form-item>
                     <el-form-item label="date of birth" prop="i_birth">
@@ -956,7 +956,7 @@ export default {
                     }
                 ],
             },
-            // 对话框显示与隐藏
+            
             applyDialog: false,
             healthDialog: false,
             vaccinationDialog: false,
@@ -967,7 +967,7 @@ export default {
         async getAllInfoer() {
             let res = await allInfoer();
             res.data.forEach((item) => {
-                item.i_gender = item.i_gender == 0 ? "男" : "女";
+                item.i_gender = item.i_gender == 0 ? "Male" : "Female";
             });
             this.applyList = res.data;
         },
@@ -1064,7 +1064,7 @@ export default {
         
         async showInfo(row) {
             this.applyDialog = true;
-            row.i_gender = row.i_gender == "男" ? 0 : 1;
+            row.i_gender = row.i_gender == "Male" ? 0 : 1;
             this.applyForm = row;
         },
         
