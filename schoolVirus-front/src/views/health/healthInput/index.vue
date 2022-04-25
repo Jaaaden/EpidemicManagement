@@ -490,7 +490,7 @@ export default {
                 i_idcard: "",
                 i_phone: "",
                 i_gender: 0,
-                i_birth: "2021/12/21",
+                i_birth: "2022/03/09",
                 i_nationality: "",
                 i_domicile: "",
                 i_native: "",
@@ -503,7 +503,7 @@ export default {
                 m_recent_resi: "",
                 m_recent_touch: "",
                 m_recent_touch: "",
-                m_touch_date: "2021/12/21",
+                m_touch_date: "2022/03/09",
                 m_health_status: "",
                 m_status_des: "",
             },
@@ -513,7 +513,7 @@ export default {
                 r_vaccine: "",
                 r_inject: "",
                 r_vac_unit: "",
-                r_vac_date: "2021/12/21",
+                r_vac_date: "2022/03/09",
             },
             applyRules: {
                 i_name: [
